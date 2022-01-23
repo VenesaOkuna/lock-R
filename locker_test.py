@@ -73,3 +73,15 @@ class TestCredentials(unittest.TestCase):
 
         self.new_credential.delete_credentials()
         self.assertEqual(len(Credentials.credentials_list),1)
+
+
+    #test to find credential by application name
+    def test_find_credentialr(self):
+
+        self.new_credential.save_details()
+        test_credential = Credentials("IG","Nessa","flipn890") 
+        test_credential.save_details()
+
+        the_credential = Credentials.find_credential("IG")
+
+        self.assertEqual(the_credential.account,test_credential.account)
