@@ -32,3 +32,61 @@ def save_user(user):
 def display_user():
 
     return User.display_user()
+
+
+#login user function
+def login_user(username,password):
+
+  
+    check_user = Credentials.verify_user(username,password)
+    return check_user
+
+
+#create new credential function
+def create_new_credential(account,userName,password):
+
+    new_credential = Credentials(account,userName,password)
+    return new_credential
+
+
+#save new credentials function
+def save_credentials(credentials):
+
+    credentials. save_details()
+
+
+#display all saved credentials function
+def display_accounts_details():
+
+    return Credentials.display_credentials()
+
+
+#delete credentials function
+def delete_credential(credentials):
+
+    credentials.delete_credentials()
+
+
+#find credentials by account name function
+def find_credential(account):
+
+    return Credentials.find_credential(account)
+
+
+#check if credential exists using account name
+def check_credendtials(account):
+
+    return Credentials.if_credential_exist(account)
+
+
+#generate random password function
+def generate_Password():
+
+    auto_password=Credentials.generatePassword()
+    return auto_password
+
+
+#copy password to clipboard using paperclip framework to copy email function
+def copy_password(account):
+
+    return Credentials.copy_password(account)
