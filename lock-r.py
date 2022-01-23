@@ -20,4 +20,7 @@ class User:
     def display_user(cls):
         return cls.user_list
 
-  
+    #method that deletes saved account
+    def delete_user(self):
+
+        User.user_list.remove(self)    
