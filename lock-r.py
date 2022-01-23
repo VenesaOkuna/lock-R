@@ -5,26 +5,26 @@ class User:
     user_list = []
 
 
-    #method that takes properties of user
+    #function that takes properties of user
     def __init__(self, username, password):
 
          self.username = username
          self.password = password
 
 
-    #method that saves new user instance to user_list
+    #function that saves new user instance to user_list
     def save_user(self):
 
         User.user_list.append(self)   
 
 
-    #decorator that displays user list
+    #method that displays user list
     @classmethod
     def display_user(cls):
         return cls.user_list
 
 
-    #method that deletes saved account
+    #function that deletes saved account
     def delete_user(self):
 
         User.user_list.remove(self)    
@@ -38,7 +38,7 @@ class Credentials():
     credentials_list = []
 
 
-    #method to verify whether user is in users_list
+    #function to verify whether user is in users_list
     @classmethod
     def verify_user(cls,username, password):
 
@@ -49,7 +49,7 @@ class Credentials():
         return a_user
     
 
-    #method that defines attributes of user credentials to be saved
+    #function that defines attributes of user credentials to be saved
     def __init__(self,account,userName, password):
 
         self.account = account
@@ -57,10 +57,13 @@ class Credentials():
         self.password = password
 
 
-    #method to store new credential to credential list
+    #function to store new credential to credential list
     def save_details(self):
 
         Credentials.credentials_list.append(self)
 
 
-    #
+    #function to delete credentials
+    def delete_credentials(self):
+
+        Credentials.credentials_list.remove(self)
