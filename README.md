@@ -10,17 +10,21 @@
     - [By Venesa Atieno](#by-venesa-atieno)
   - [Table of Content](#table-of-content)
   - [Description](#description)
-  - [Installation](#installation)
-    - [Requirements](#requirements)
-    - [Installation Process](#installation-process)
+  - [Installation / Setup instruction](#installation--setup-instruction)
+      - [The application requires the following installations to operate](#the-application-requires-the-following-installations-to-operate)
+      - [Cloning](#cloning)
   - [Site Screenshot](#site-screenshot)
-  - [Behavior Driven Development](#behavior-driven-development)
+  - [User Stories](#user-stories)
+  - [Behaviour Driven Development](#behaviour-driven-development)
     - [Running the Application](#running-the-application)
   - [Technology Used](#technology-used)
   - [Reference](#reference)
   - [Licence](#licence)
+  - [Known Bugs](#known-bugs)
+  - [Contact Information](#contact-information)
   - [Authors Info](#authors-info)
   <!-- - [Site Screenshot](#site-screenshot) -->
+  - [User Stories](#user-stories)
   - [Behavior Driven Development](#behavior-driven-development)
   - [Running the Application](#Running-the-Application)
   - [Technology Used](#technology-used)
@@ -30,35 +34,33 @@
 
 
 ## Description
-<p> An amazing application that will help us manage our passwords and even generate new passwords for us.</p>
+<p> An amazing terminal-based program where a user can store credentials and generate passwords. </p>
 
 
 
 
-## Installation
+## Installation / Setup instruction
 
-### Requirements
+#### The application requires the following installations to operate 
+* python3.8
+* pyperclip
+* pip
 
-* Either a computer,phone,tablet or an Ipad
+#### Cloning
 
-* browser
+* Open Terminal {Ctrl+Alt+T}
 
-* An access to the Internet
+* git clone ```https://github.com/VenesaOkuna/lock-R.git```
 
+* cd lock-R
 
-### Installation Process
-
-[Go Back to the top](#Lock-R)
+* code . or atom . based on the text editor you have.
 
 ## Site Screenshot
 
 Here's an image of the design of the site :
 
-
-
-
-
-## Behavior Driven Development
+## User Stories
 
 1. Given : A user wants to log into her Lock-R account
    when : creating an account
@@ -84,14 +86,26 @@ Here's an image of the design of the site :
    when : creating a credential account
    Then : The user is able to.
 
+## Behaviour Driven Development
+| Behaviour | Input | Output |
+| :---------------- | :---------------: | ------------------: |
+|Open the application on the terminal | Run the command ```$ ./run_lock-r.py```|Hello Welcome to Lock-R <br>* CA ---  Sign Up * LI ---  Log in, Have An Account |
+|Select  CA| input username and password| Hello ```username```, Your account has been created succesfully! Your password is: ```password```|
+|Select LI  | Enter your password and username you signed up with| Abbreviations menu to help you navigate through the application|
+|Store a new credential in the application| Enter ```CC```|Enter Account, username, password<br>choose ```IP``` to enter your password or ```GP``` for the application to generate a password for you |
+|Display all stored credentials | Enter ```VC```|A list of all credentials that has been stored or ```You don't have any credentials saved yet``` |
+|Find a stored credential based on account name|Enter ```EC```| Enter the Account Name you want to search for and returns the account details|
+|Delete an existing credential that you don't want anymore|Enter ```Del```|Enter the account name of the Credentials you want to delete and returns true if the account has been deleted and false if the account doesn't exixt|
+|Exit the application| Enter ```EX```| The application exits|
+
 
 
 
 ### Running the Application
 To run the application, in your terminal:
- * $ #!/usr/bin/env python3.6
- * $ chmod +x run.py
- * $ ./run.py
+ * $ #!/usr/bin/env python3.8
+ * $ chmod +x run_lock-R.py
+ * $ ./run_lock-R.py
 
 
 ## Technology Used
@@ -132,6 +146,12 @@ SOFTWARE.
 
 [Go Back to the top](#Lock-R)
 
+## Known Bugs
+* There are no known bugs currently but pull requests are allowed incase you spot one
+
+## Contact Information 
+
+If you have any question or contributions, please email me at [venesaatieno5@gmail.com]
 
 ## Authors Info
 
