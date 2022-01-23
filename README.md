@@ -89,7 +89,7 @@ Here's an image of the design of the site :
 ## Behaviour Driven Development
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
-|Run the command ```$ ./run_lock-R.py```|Open the application on the terminal  |Hello Welcome to Lock-R <br>* ```CA``` ---  Sign Up * ```LI``` ---  Log in, Have An Account |
+|Open the application on the terminal | Run the command ```$ ./run_lock-R.py```|Hello Welcome to Lock-R <br>* ```CA``` ---  Sign Up * ```LI``` ---  Log in, Have An Account |
 |input username and password| Select  ```CA```| Hello ```username```, Your account has been created succesfully! Your password is: ```password```|
 | Enter your password and username you signed up with  |Select ```LI```| Abbreviations menu to help you navigate through the application|
 |Store a new credential in the application| Enter ```CC```|Enter Account, username, password<br>choose ```IP``` to enter your password or ```GP``` for the application to generate a password for you |
