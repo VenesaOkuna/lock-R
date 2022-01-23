@@ -53,3 +53,12 @@ class TestCredentials(unittest.TestCase):
     def tearDown(self):
 
         Credentials.credentials_list = []
+
+
+    #test saving multiple credentials
+    def test_save_many_accounts(self):
+
+        self.new_credential.save_details()
+        test_credential = Credentials("IG","Nessa","flipn890") 
+        test_credential.save_details()
+        self.assertEqual(len(Credentials.credentials_list),2)
