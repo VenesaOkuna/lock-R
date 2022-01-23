@@ -86,3 +86,13 @@ class Credentials():
     def copy_password(cls,account):
         found_credentials = Credentials.find_credential(account)
         pyperclip.copy(found_credentials.password)
+
+
+    #method that checks if user credentials exist
+    @classmethod
+    def if_credential_exist(cls, account):
+
+        for credential in cls.credentials_list:
+            if credential.account == account:
+                return True
+        return False
