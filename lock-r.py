@@ -1,5 +1,8 @@
-#creates class that generates new instance of a user
+import random
+import string
+import pyperclip
 
+#creates class that generates new instance of a user
 class User:
 
     user_list = []
@@ -76,3 +79,10 @@ class Credentials():
         for credential in cls.credentials_list:
             if credential.account == account:
                 return credential
+
+
+    #copy password to clipboard using pyperclip
+    @classmethod
+    def copy_password(cls,account):
+        found_credentials = Credentials.find_credential(account)
+        pyperclip.copy(found_credentials.password)
