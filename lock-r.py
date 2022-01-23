@@ -9,3 +9,15 @@ class User:
 
          self.username = username
          self.password = password
+
+    #method that saves new user instance to user_list
+    def save_user(self):
+
+        User.user_list.append(self)   
+
+    #decorator that displays user list
+    @classmethod
+    def display_user(cls):
+        return cls.user_list
+
+  
