@@ -23,18 +23,10 @@
   - [Known Bugs](#known-bugs)
   - [Contact Information](#contact-information)
   - [Authors Info](#authors-info)
-  <!-- - [Site Screenshot](#site-screenshot) -->
-  - [User Stories](#user-stories)
-  - [Behavior Driven Development](#behavior-driven-development)
-  - [Running the Application](#Running-the-Application)
-  - [Technology Used](#technology-used)
-  - [Reference](#reference)
-  - [Licence](#licence)
-  - [Authors Info](#authors-info)
 
 
 ## Description
-<p> An amazing terminal-based program where a user can store credentials and generate passwords. </p>
+<p> Lock-R is an amazing terminal-based python program where a user can store credentials of different applications or services and generate passwords. </p>
 
 
 
@@ -58,7 +50,8 @@
 
 ## Site Screenshot
 
-Here's an image of the design of the site :
+Here's a screenshot of the program :
+<img src="https://raw.githubusercontent.com/VenesaOkuna/Lock-R/master/assets/sitescreenshot.png" width="900px" height="440px">
 
 ## User Stories
 
@@ -104,8 +97,8 @@ Here's an image of the design of the site :
 ### Running the Application
 To run the application, in your terminal:
  * $ #!/usr/bin/env python3.8
- * $ chmod +x run_lock-R.py
- * $ ./run_lock-R.py
+ * $ chmod +x runlocker.py
+ * $ ./runlocker.py
 
 
 ## Technology Used
