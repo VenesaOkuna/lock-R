@@ -39,3 +39,11 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_credential.account,'Gmail')
         self.assertEqual(self.new_credential.userName,'Ness')
         self.assertEqual(self.new_credential.password,'kokokrim')
+
+
+    #test to see if credentials is saved to credential list
+
+    def save_credential_test(self):
+
+        self.new_credential.save_details()
+        self.assertEqual(len(Credentials.credentials_list),1)
