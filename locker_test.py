@@ -85,3 +85,13 @@ class TestCredentials(unittest.TestCase):
         the_credential = Credentials.find_credential("IG")
 
         self.assertEqual(the_credential.account,test_credential.account)
+
+
+    #test to get boolean value whether we can find credential
+    def test_credential_exist(self):
+
+        self.new_credential.save_details()
+        the_credential = Credentials("IG", "Nessa", "flipn890")  
+        the_credential.save_details()
+        credential_is_found = Credentials.if_credential_exist("IG")
+        self.assertTrue(credential_is_found)   
